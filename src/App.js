@@ -1,10 +1,16 @@
 import "./styles.css";
 
 export default function App() {
+  const padButtons = [...Array(9).keys()];
   return (
-    <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
+    <div id="root">
+      <div id="app">
+        <div id="pad-container">
+          {padButtons.map((x) => (
+            <div className="pad" id={"pad" + x}></div>
+          ))}
+        </div>
+      </div>
     </div>
   );
 }

@@ -1,4 +1,46 @@
-.App {
-  font-family: sans-serif;
-  text-align: center;
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  background-color: #659dbd;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 98vh;
+}
+
+#app {
+  background-color: #feebc1;
+  border-radius: 25px;
+  width: 600px;
+  height: 600px;
+}
+
+#pad-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#pad-container:nth-child(3n) {
+  flex-basis: 100%;
+  page-break-after: always;
+  break-after: always;
+}
+
+.pad {
+  margin: 25px;
+  height: 25%;
+  width: 25%;
+  border-radius: 10px;
+  background-color: #659dbd;
 }
