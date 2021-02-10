@@ -26,6 +26,8 @@ html {
 
 #display {
   background-color: #659dbd;
+  color: #feebc1;
+  font-size: 2em;
   height: 80px;
   width: 540px;
   margin: auto;
@@ -49,10 +51,12 @@ html {
 
 .drum-pad {
   background-color: #659dbd;
-  height: 130px;
-  width: 130px;
-  padding: 10px;
-  margin: 0px;
+  color: #feebc1;
+  font-size: 3em;
+  height: 150px;
+  max-width: 150px;
+  margin: 10px;
   border: 0px;
   border-radius: 10px;
+  flex-basis: 33%;
 }
